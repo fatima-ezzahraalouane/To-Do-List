@@ -1,0 +1,57 @@
+body {
+    font-family: Inter, sans-serif;
+    background-image: url('imageTodolist.jpg');
+    background-size: cover;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+#addTaskButton {
+    background-color: #ffffff;
+    color: black;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 0.3rem;
+}
+
+#searchInput {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0;
+    border-radius: 50px;
+}
+
+.search-icon {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    color: black;
+}
