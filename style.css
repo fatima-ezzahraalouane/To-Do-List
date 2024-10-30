@@ -10,17 +10,6 @@ header {
     background: rgba(0, 0, 0, 0.5);
 }
 
-h1 {
-    font-size: 2rem;
-    margin: 0;
-    font-weight: bold;
-}
-
-.header-actions {
-    display: flex;
-    align-items: center;
-}
-
 #addTaskButton {
     background-color: #ffffff;
     color: black;
@@ -32,10 +21,8 @@ h1 {
 }
 
 .search-container {
-    display: flex;
-    align-items: center;
     background-color: #ffffff;
-    border-radius: 50px;
+    border-radius: 20px;
     padding: 0.3rem;
 }
 
@@ -49,8 +36,6 @@ h1 {
 
 .search-icon {
     font-size: 1.2rem;
-    margin-left: 0.5rem;
-    color: black;
 }
 
 /* Section de task board */

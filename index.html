@@ -13,12 +13,12 @@
 <body>
     <!-- Header de la page -->
     <header class="d-flex justify-content-between align-items-center p-3 m-2">
-        <h1>TO DO LIST</h1>
-        <div class="header-actions">
+        <h1 class="fs-3 m-0">TO DO LIST</h1>
+        <div class="d-flex text-center">
             <button id="addTaskButton">Ajouter une tâche +</button>
-            <div class="search-container">
+            <div class="search-container d-flex text-center">
                 <input type="text" id="searchInput" placeholder="Search">
-                <span class="search-icon">🔍</span>
+                <span class="search-icon ms-2 text-black">🔍</span>
             </div>
         </div>
     </header>
@@ -37,6 +37,43 @@
             </div>
         </div>
     </section>
+
+    <!-- Section de modal -->
+    <section>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h2>Nouvelle Tâche</h2>
+                <label for="taskTitle">Titre</label>
+                <input type="text" id="taskTitle" placeholder="Titre" required>
+
+                <label for="taskDescription">Description</label>
+                <textarea id="taskDescription" placeholder="Description" required></textarea>
+
+                <label for="taskStatus">Statut</label>
+                <select id="taskStatus">
+                    <option value="todo">To Do</option>
+                    <option value="doing">Doing</option>
+                    <option value="done">Done</option>
+                </select>
+
+                <label for="taskDeadline">Date d'échéance</label>
+                <input type="date" id="taskDeadline" required>
+
+                <label for="taskPriority">Priorité</label>
+                <select id="taskPriority">
+                    <option value="P1">P1</option>
+                    <option value="P2">P2</option>
+                    <option value="P3">P3</option>
+                </select>
+
+                <button id="cancelButton">Annuler</button>
+                <button id="addTask">Ajouter</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lien page JS -->
+    <script src="app.js"></script>
 </body>
 
 </html>
