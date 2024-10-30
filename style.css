@@ -10,14 +10,10 @@ header {
     background: rgba(0, 0, 0, 0.5);
 }
 
-#addTaskButton {
+.btn-light {
     background-color: #ffffff;
     color: black;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 20px;
-    font-size: 1rem;
-    margin-right: 1rem;
+    
 }
 
 .search-container {
