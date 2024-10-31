@@ -41,3 +41,9 @@ header {
     /* padding: 1rem; */
     border-radius: 25px;
 }
+
+.modal-content {
+    background: rgba(0, 128, 128, 0.7);
+    border-radius: 12px;
+    border: none;
+}
