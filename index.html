@@ -5,102 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TaskFlow - To Do List</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Header de la page -->
-    <header class="d-flex justify-content-between align-items-center p-3 m-2">
-        <h1 class="fs-3 m-0">TO DO LIST</h1>
-        <div class="d-flex text-center">
-            <!-- <button id="addTaskButton">Ajouter une tâche +</button> -->
-             <button id="addTaskButton" class="btn btn-light rounded-pill fs-6 border-0 me-3">Ajouter une tâche +</button>
-            <div class="search-container d-flex text-center">
+    <header>
+        <h1>TO DO LIST</h1>
+        <div class="header-actions">
+            <button id="addTaskButton">Ajouter une tâche +</button>
+            <div class="search-container">
                 <input type="text" id="searchInput" placeholder="Search">
-                <span class="search-icon ms-2 text-black">🔍</span>
+                <span class="search-icon">🔍</span>
             </div>
         </div>
     </header>
 
-    <!-- Modal pour ajouter une tâche -->
-    <!-- <section>
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <h2>Nouvelle Tâche</h2>
-                <label for="taskTitle">Titre</label>
-                <input type="text" id="taskTitle" placeholder="Titre" required>
-
-                <label for="taskDescription">Description</label>
-                <textarea id="taskDescription" placeholder="Description" required></textarea>
-
-                <label for="taskStatus">Statut</label>
-                <select id="taskStatus">
-                    <option value="todo">To Do</option>
-                </select>
-
-                <label for="taskDeadline">Date d'échéance</label>
-                <input type="date" id="taskDeadline" required>
-
-                <label for="taskPriority">Priorité</label>
-                <select id="taskPriority">
-                    <option value="P1">P1</option>
-                    <option value="P2">P2</option>
-                    <option value="P3">P3</option>
-                </select>
-
-                <button id="cancelButton">Annuler</button>
-                <button id="addTask">Ajouter</button>
-            </div>
+    <section class="task-board">
+        <div class="column" id="todo">
+            <h2>TO DO</h2>
         </div>
-    </section> -->
-
-    <section>
-        <div id="taskModal" class="modal" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content rounded-3 p-4">
-                    <h2 class="modal-title text-dark mb-3">Nouvelle Tâche</h2>
-                    <form id="taskForm">
-                        <input type="text" id="taskTitle" class="form-control mb-3" placeholder="Titre" required>
-                        <textarea id="taskDescription" class="form-control mb-3" placeholder="Description"></textarea>
-                        <select id="taskStatus" class="form-select mb-3">
-                            <option value="To do">To Do</option>
-                            <option value="Doing">Doing</option>
-                            <option value="Done">Done</option>
-                        </select>
-                        <input type="date" id="taskDueDate" class="form-control mb-3" required>
-                        <select id="taskPriority" class="form-select mb-3">
-                            <option value="P1">P1</option>
-                            <option value="P2">P2</option>
-                            <option value="P3">P3</option>
-                        </select>
-                        <div class="modal-footer p-0 mt-4">
-                            <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismis="modal">Annuler</button>
-                            <button type="submit" class="btn btn-dark rounded-pill">Ajouter</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+        <div class="column" id="doing">
+            <h2>DOING</h2>
+        </div>
+        <div class="column" id="done">
+            <h2>DONE</h2>
         </div>
     </section>
 
-    <!-- Section de task board -->
-    <section>
-        <div class="container d-flex justify-content-around flex-wrap p-4">
-            <div class="column p-3" id="todo">
-                <h2 class="fs-4 text-center">TO DO</h2>
-            </div>
-            <div class="column p-3" id="doing">
-                <h2 class="fs-4 text-center">DOING</h2>
-            </div>
-            <div class="column p-3" id="done">
-                <h2 class="fs-4 text-center">DONE</h2>
-            </div>
-        </div>
-    </section>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Nouvelle Tâche</h2>
+            <label for="taskTitle">Titre</label>
+            <input type="text" id="taskTitle" placeholder="Titre" required>
 
-    <!-- Lien page JS -->
+            <label for="taskDescription">Description</label>
+            <textarea id="taskDescription" placeholder="Description" required></textarea>
+
+            <label for="taskStatus">Statut</label>
+            <select id="taskStatus">
+                <option value="todo">To do</option>
+                <option value="doing">Doing</option>
+                <option value="done">Done</option>
+            </select>
+
+            <label for="taskDeadline">Date d'échéance</label>
+            <input type="date" id="taskDeadline" required>
+
+            <label for="taskPriority">Priorité</label>
+            <select id="taskPriority">
+                <option value="P1">P1</option>
+                <option value="P2">P2</option>
+                <option value="P3">P3</option>
+            </select>
+
+            <button id="cancelButton">Annuler</button>
+            <button id="addTask">Ajouter</button>
+        </div>
+    </div>
+
     <script src="app.js"></script>
 </body>
 
