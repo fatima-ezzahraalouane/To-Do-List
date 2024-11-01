@@ -32,6 +32,12 @@ body {
     background: rgba(0, 128, 128, 0.7);
   }
 
+  .column h2 span {
+    font-size: 1.5rem;
+    color: #f0f0f0;
+    margin-left: 0.5rem;
+  }
+
   .task {
     background: #333;
     margin: 1rem 0;

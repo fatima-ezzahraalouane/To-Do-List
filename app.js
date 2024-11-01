@@ -35,6 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById(status).appendChild(task);
         modal.style.display = 'none';
         clearModalFields();
+
+        updateTaskCounts();
       } else {
         alert('Veuillez remplir tous les champs.');
       }
@@ -46,6 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentStatus = task.parentElement.id;
     const nextStatus = currentStatus === 'todo' ? 'doing' : currentStatus === 'doing' ? 'done' : 'todo';
     document.getElementById(nextStatus).appendChild(task);
+
+    updateTaskCounts();
   }
 
 
@@ -63,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   function deleteTask(button) {
     button.parentElement.remove();
+    updateTaskCounts();
   }
   
   function clearModalFields() {
