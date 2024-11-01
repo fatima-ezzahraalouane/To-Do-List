@@ -66,6 +66,12 @@ document.addEventListener('DOMContentLoaded', () => {
     addTaskButton.addEventListener('click', () => {
         modal.style.display='flex';
     });
+
+    cancelButton.addEventListener('click', () => {
+        modal.style.display='none';
+    });
+
+    addTask
   });
 
 
