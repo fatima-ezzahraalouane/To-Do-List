@@ -2,28 +2,12 @@ body {
     font-family: 'Inter', sans-serif;
     background-image: url('imageTodolist.jpg');
     background-size: cover;
-    /* color: #ffffff; */
   }
   
   header {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem; */
     background: rgba(0, 0, 0, 0.5);
   }
-  
-  h1 {
-    font-size: 2rem;
-    margin: 0;
-    font-weight: bold;
-  }
-  
-  .header-actions {
-    display: flex;
-    align-items: center;
-  }
-  
+
   #addTaskButton {
     background-color: #ffffff;
     color: black;
@@ -35,14 +19,6 @@ body {
     cursor: pointer;
   }
 
-  .search-container {
-    display: flex;
-    align-items: center;
-    background-color: #ffffff;
-    border-radius: 50px;
-    padding: 0.3rem;
-  }
-  
   #searchInput {
     border: none;
     outline: none;
@@ -51,29 +27,17 @@ body {
     border-radius: 50px;
   }
 
-  .search-icon {
-    font-size: 1.2rem;
-    margin-left: 0.5rem;
-    color: black;
-  }
-
-  .task-board {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-  }
-  
   .column {
     width: 30%;
     background: rgba(0, 128, 128, 0.7);
-    padding: 1rem;
-    border-radius: 10px;
+    /* padding: 1rem;
+    border-radius: 10px; */
   }
   
-  .column h2 {
+  /* .column h2 {
     text-align: center;
     font-size: 1.5rem;
-  }
+  } */
   
   .task {
     background: #333;
@@ -104,7 +68,6 @@ body {
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
     justify-content: center;
-    border-radius: 25px;
     align-items: center;
   }
   
@@ -161,17 +124,17 @@ body {
 
 
 /* Grand écran d'ordinateur (à partir de 1280px) */
-@media (min-width: 1280px) {
+/* @media (min-width: 1280px) {
     body {
         font-size: 1.2rem;
     }
     .task-board {
         justify-content: space-around;
     }
-}
+} */
 
 /* Petit écran d'ordinateur (de 1024px à 1279px) */
-@media (min-width: 1024px) and (max-width: 1279px) {
+/* @media (min-width: 1024px) and (max-width: 1279px) {
     body {
         font-size: 1.1rem;
     }
@@ -182,10 +145,10 @@ body {
         width: 90%;
         margin-bottom: 1rem;
     }
-}
+} */
 
 /* Tablette (de 768px à 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
+/* @media (min-width: 768px) and (max-width: 1023px) {
     body {
         font-size: 1rem;
     }
@@ -197,10 +160,10 @@ body {
         width: 90%;
         margin-bottom: 1rem;
     }
-}
+} */
 
 /* Mobile (jusqu'à 767px) */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     body {
         font-size: 0.9rem;
     }
@@ -212,4 +175,4 @@ body {
         width: 90%;
         margin-bottom: 1rem;
     }
-}
+} */

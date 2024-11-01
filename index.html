@@ -12,26 +12,26 @@
 
 <body class="text-white">
     <!-- Header -->
-    <header class="d-flex justify-content-between align-items-center p-3">
-        <h1>TO DO LIST</h1>
-        <div class="header-actions">
+    <header class="d-flex justify-content-between align-items-center p-3 m-2">
+        <h1 class="fs-2 m-0 fw-semibold">TO DO LIST</h1>
+        <div class="d-flex align-items-center">
             <button id="addTaskButton">Ajouter une tâche +</button>
-            <div class="search-container">
+            <div class="d-flex align-items-center bg-white rounded-pill p-1">
                 <input type="text" id="searchInput" placeholder="Search">
-                <span class="search-icon">🔍</span>
+                <span class="fs-5 ms-2 text-black">🔍</span>
             </div>
         </div>
     </header>
 
-    <section class="task-board">
-        <div class="column" id="todo">
-            <h2>TO DO</h2>
+    <section class="d-flex justify-content-around p-4">
+        <div class="column p-3 rounded-3" id="todo">
+            <h2 class="text-center fs-4">TO DO</h2>
         </div>
-        <div class="column" id="doing">
-            <h2>DOING</h2>
+        <div class="column p-3 rounded-3" id="doing">
+            <h2 class="text-center fs-4">DOING</h2>
         </div>
-        <div class="column" id="done">
-            <h2>DONE</h2>
+        <div class="column p-3 rounded-3" id="done">
+            <h2 class="text-center fs-4">DONE</h2>
         </div>
     </section>
 
