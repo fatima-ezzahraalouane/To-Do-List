@@ -55,6 +55,14 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('done-count').textContent = document.getElementById('done').children.length - 1;
   }
 
+  document.addEventListener('DOMContentLoaded', () => {
+    updateTaskCounts();
+
+    const addTaskButton = document.getElementById('addTaskButton');
+    const modal = document.getElementById('modal');
+    const cancelButton = document.getElementById('cancelButton');
+    const addTask = document.getElementById('addTask');
+  });
 
 
 
