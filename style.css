@@ -1,15 +1,15 @@
 body {
-    font-family: Inter, sans-serif;
+    font-family: 'Inter', sans-serif;
     background-image: url('imageTodolist.jpg');
     background-size: cover;
-    color: #ffffff;
+    /* color: #ffffff; */
   }
   
   header {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem; */
     background: rgba(0, 0, 0, 0.5);
   }
   
@@ -109,11 +109,11 @@ body {
   }
   
   .modal-content {
-    background: rgba(0, 128, 128, 0.7); /* Couleur bleutée translucide */
+    background: rgba(0, 128, 128, 0.7);
     padding: 2rem;
     width: 90%;
     max-width: 400px;
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     color: #000;
 }
@@ -157,4 +157,59 @@ body {
   border-radius: 20px;
   font-size: 1rem;
   cursor: pointer;
+}
+
+
+/* Grand écran d'ordinateur (à partir de 1280px) */
+@media (min-width: 1280px) {
+    body {
+        font-size: 1.2rem;
+    }
+    .task-board {
+        justify-content: space-around;
+    }
+}
+
+/* Petit écran d'ordinateur (de 1024px à 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    body {
+        font-size: 1.1rem;
+    }
+    .task-board {
+        flex-direction: row;
+    }
+    .column {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Tablette (de 768px à 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 1rem;
+    }
+    .task-board {
+        flex-direction: column;
+        align-items: center;
+    }
+    .column {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Mobile (jusqu'à 767px) */
+@media (max-width: 767px) {
+    body {
+        font-size: 0.9rem;
+    }
+    .task-board {
+        flex-direction: column;
+        align-items: center;
+    }
+    .column {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
 }
