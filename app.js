@@ -47,6 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById(nextStatus).appendChild(task);
   }
 
+
+//   fonction pour changer le nombre de statistiques
   function updateTaskCounts(){
     document.getElementById('todo-count').textContent = document.getElementById('todo').children.length - 1;
     document.getElementById('doing-count').textContent = document.getElementById('doing').children.length - 1;
