@@ -62,6 +62,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('modal');
     const cancelButton = document.getElementById('cancelButton');
     const addTask = document.getElementById('addTask');
+
+    addTaskButton.addEventListener('click', () => {
+        modal.style.display='flex';
+    });
   });
 
 
