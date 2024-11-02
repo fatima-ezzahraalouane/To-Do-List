@@ -53,7 +53,7 @@ function changeStatus(button) {
 }
 
 
-//   fonction pour changer le nombre de statistiques
+// Fonction pour changer le nombre de statistiques
 function updateTaskCounts() {
   document.getElementById('todo-count').textContent = document.getElementById('todo').children.length - 1;
   document.getElementById('doing-count').textContent = document.getElementById('doing').children.length - 1;
@@ -64,7 +64,7 @@ function updateTaskCounts() {
 
 
 
-
+// Function pour supprimer une tache
 function deleteTask(button) {
   button.parentElement.remove();
   updateTaskCounts();
