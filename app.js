@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Fonction pour changer le statut
 function changeStatus(button) {
   const task = button.parentElement;
   const currentStatus = task.parentElement.id;
