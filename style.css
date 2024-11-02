@@ -1,80 +1,80 @@
 body {
-    font-family: 'Inter', sans-serif;
-    background-image: url('imageTodolist.jpg');
-    background-size: cover;
-  }
-  
-  header {
-    background: rgba(0, 0, 0, 0.5);
-  }
+  font-family: 'Inter', sans-serif;
+  background-image: url('imageTodolist.jpg');
+  background-size: cover;
+}
 
-  #addTaskButton {
-    background-color: #ffffff;
-    color: black;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 20px;
-    font-size: 1rem;
-    margin-right: 1rem;
-    cursor: pointer;
-  }
+header {
+  background: rgba(0, 0, 0, 0.5);
+}
 
-  #searchInput {
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    padding: 0;
-    border-radius: 50px;
-  }
+/* #addTaskButton {
+  background-color: #ffffff;
+  color: black;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+} */
 
-  .column {
-    width: 30%;
-    background: rgba(0, 128, 128, 0.7);
-  }
+#searchInput {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0;
+  border-radius: 50px;
+}
 
-  .column h2 span {
-    font-size: 1.5rem;
-    color: #f0f0f0;
-    margin-left: 0.5rem;
-  }
+.column {
+  width: 30%;
+  background: rgba(0, 128, 128, 0.7);
+}
 
-  .task {
-    background: #333;
-    margin: 1rem 0;
-    padding: 1rem;
-    border-radius: 10px;
-    color: #fff;
-  }
-  
-  .task[data-priority="P1"] {
-    border-left: 7px solid red;
-  }
-  
-  .task[data-priority="P2"] {
-    border-left: 7px solid orange;
-  }
-  
-  .task[data-priority="P3"] {
-    border-left: 7px solid #00FF00;
-  }
-  
-  .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+.column h2 span {
+  font-size: 1.5rem;
+  color: #f0f0f0;
+  margin-left: 0.5rem;
+}
 
-  }
-  
-  .modal-content {
-    background: rgba(0, 128, 128, 0.885) !important;
-    width: 90%;
-    max-width: 400px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+.task {
+  background: #333;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.task[data-priority="P1"] {
+  border-left: 7px solid red;
+}
+
+.task[data-priority="P2"] {
+  border-left: 7px solid orange;
+}
+
+.task[data-priority="P3"] {
+  border-left: 7px solid #00FF00;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+}
+
+.modal-content {
+  background: rgba(0, 128, 128, 0.885) !important;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* .modal-content input, 
@@ -90,7 +90,7 @@ body {
     color: #000;
     font-size: 1rem;
 } */
-  
+
 /* #cancelButton {
   background-color: #888;
   color: #fff;
