@@ -52,17 +52,12 @@ function changeStatus(button) {
   updateTaskCounts();
 }
 
-
 // Fonction pour changer le nombre de statistiques
 function updateTaskCounts() {
   document.getElementById('todo-count').textContent = document.getElementById('todo').children.length - 1;
   document.getElementById('doing-count').textContent = document.getElementById('doing').children.length - 1;
   document.getElementById('done-count').textContent = document.getElementById('done').children.length - 1;
 }
-
-
-
-
 
 // Function pour supprimer une tache
 function deleteTask(button) {
