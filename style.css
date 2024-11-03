@@ -8,17 +8,6 @@ header {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* #addTaskButton {
-  background-color: #ffffff;
-  color: black;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 20px;
-  font-size: 1rem;
-  margin-right: 1rem;
-  cursor: pointer;
-} */
-
 #searchInput {
   border: none;
   outline: none;
@@ -29,7 +18,6 @@ header {
 }
 
 .column {
-  width: 30%;
   background: rgba(0, 128, 128, 0.7);
 }
 
@@ -80,98 +68,10 @@ header {
 
 @media (max-width: 767px) {
   body {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
+
   #searchInput {
-      width: 100%;
+    width: 100%;
   }
 }
-/* .modal-content input, 
-.modal-content select, 
-.modal-content textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 8px;
-    background: #f0f0f0;
-    color: #000;
-    font-size: 1rem;
-} */
-
-/* #cancelButton {
-  background-color: #888;
-  color: #fff;
-  padding: 0.5rem 1.5rem;
-  border: none;
-  border-radius: 20px;
-  font-size: 1rem;
-  margin-right: 10px;
-  cursor: pointer;
-}
-  
-#addTask {
-  background-color: #333;
-  color: #fff;
-  padding: 0.5rem 1.5rem;
-  border: none;
-  border-radius: 20px;
-  font-size: 1rem;
-  cursor: pointer;
-} */
-
-
-/* Grand écran d'ordinateur (à partir de 1280px) */
-/* @media (min-width: 1280px) {
-    body {
-        font-size: 1.2rem;
-    }
-    .task-board {
-        justify-content: space-around;
-    }
-} */
-
-/* Petit écran d'ordinateur (de 1024px à 1279px) */
-/* @media (min-width: 1024px) and (max-width: 1279px) {
-    body {
-        font-size: 1.1rem;
-    }
-    .task-board {
-        flex-direction: row;
-    }
-    .column {
-        width: 90%;
-        margin-bottom: 1rem;
-    }
-} */
-
-/* Tablette (de 768px à 1023px) */
-/* @media (min-width: 768px) and (max-width: 1023px) {
-    body {
-        font-size: 1rem;
-    }
-    .task-board {
-        flex-direction: column;
-        align-items: center;
-    }
-    .column {
-        width: 90%;
-        margin-bottom: 1rem;
-    }
-} */
-
-/* Mobile (jusqu'à 767px) */
-/* @media (max-width: 767px) {
-    body {
-        font-size: 0.9rem;
-    }
-    .task-board {
-        flex-direction: column;
-        align-items: center;
-    }
-    .column {
-        width: 90%;
-        margin-bottom: 1rem;
-    }
-} */
