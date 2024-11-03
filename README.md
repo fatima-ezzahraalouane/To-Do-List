@@ -22,6 +22,6 @@ La start-up **TaskFlow** souhaite rendre son équipe de développement plus effi
 
 - 👩‍💻 **En tant que développeuse Front-End**, j'utiliserai **JavaScript** pour rendre l'application dynamique et interactive, incluant des **animations d'ajout et de suppression** des tâches pour enrichir l'expérience utilisateur.
 
-- 👩‍💻 **En tant que développeuse Front-End**, je vais rendre l'application **accessible** en respectant les critères d'accessibilité (contraste de couleurs, labels pour les éléments de formulaire), afin qu'elle soit utilisable par des personnes ayant des besoins spécifiques.
+- 👩‍💻 **En tant que développeuse Front-End**, je vais rendre l'application **accessible** en respectant les critères d'accessibilité (contraste de couleurs, labels pour les éléments de formulaire, messages d'erreur accessibles, structure sémantique), afin qu'elle soit utilisable par des personnes ayant des besoins spécifiques.
 
 - 🚀 **En tant que membre de l'équipe**, je vais **déployer le projet en ligne** via **GitHub Pages** pour le rendre accessible à tous les utilisateurs et faciliter les tests sur différents appareils et navigateurs.
