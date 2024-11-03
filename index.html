@@ -13,7 +13,7 @@
 
 <body class="text-white">
     <!-- Header -->
-    <header class="d-flex justify-content-between align-items-center p-3 m-2">
+    <header class="d-flex justify-content-between align-items-center p-3 m-2 rounded-3">
         <h1 class="fs-2 m-0 fw-semibold">TO DO LIST</h1>
         <div class="d-flex align-items-center">
             <button id="addTaskButton" class="btn btn-light rounded-pill me-2">Ajouter une tâche +</button>
@@ -24,18 +24,40 @@
         </div>
     </header>
 
-    <!-- Task -->
-    <!-- <section class="d-flex justify-content-around p-4">
-        <div class="column p-3 rounded-3" id="todo">
-            <h2 class="text-center fs-4">TO DO |<span id="todo-count">0</span></h2>
+    <!-- Modal -->
+    <div id="modal" class="modal justify-content-center align-items-center">
+        <div class="modal-content p-4 text-black">
+            <h2 class="fs-3 mb-3 text-black">Nouvelle Tâche</h2>
+
+            <label for="taskTitle">Titre</label>
+            <input type="text" id="taskTitle" placeholder="Titre" class="form-control mb-1" required>
+
+            <label for="taskDescription">Description</label>
+            <textarea id="taskDescription" placeholder="Description" class="form-control mb-1" required></textarea>
+
+            <label for="taskStatus">Statut</label>
+            <select id="taskStatus" class="form-select mb-1">
+                <option value="todo">To do</option>
+                <option value="doing">Doing</option>
+                <option value="done">Done</option>
+            </select>
+
+            <label for="taskDeadline">Date d'échéance</label>
+            <input type="date" id="taskDeadline" class="form-control mb-1" required>
+
+            <label for="taskPriority">Priorité</label>
+            <select id="taskPriority" class="form-select mb-2">
+                <option value="P1">P1</option>
+                <option value="P2">P2</option>
+                <option value="P3">P3</option>
+            </select>
+
+            <div class="modal-footer p-0">
+                <button id="cancelButton" type="button" class="btn btn-secondary rounded-pill">Annuler</button>
+                <button id="addTask" type="submit" class="btn btn-dark rounded-pill">Ajouter</button>
+            </div>
         </div>
-        <div class="column p-3 rounded-3" id="doing">
-            <h2 class="text-center fs-4">DOING |<span id="doing-count">0</span></h2>
-        </div>
-        <div class="column p-3 rounded-3" id="done">
-            <h2 class="text-center fs-4">DONE |<span id="done-count">0</span></h2>
-        </div>
-    </section> -->
+    </div>
 
     <!-- Task section avec Bootstrap -->
     <section class="container-fluid p-4">
@@ -51,38 +73,6 @@
             </div>
         </div>
     </section>
-    
-    <!-- Modal -->
-    <div id="modal" class="modal justify-content-center align-items-center">
-        <div class="modal-content p-4 text-black">
-            <h2 class="fs-3 mb-4 text-black">Nouvelle Tâche</h2>
-            <label for="taskTitle">Titre</label>
-            <input type="text" id="taskTitle" placeholder="Titre" required>
-
-            <label for="taskDescription">Description</label>
-            <textarea id="taskDescription" placeholder="Description" required></textarea>
-
-            <label for="taskStatus">Statut</label>
-            <select id="taskStatus" >
-                <option value="todo">To do</option>
-                <option value="doing">Doing</option>
-                <option value="done">Done</option>
-            </select>
-
-            <label for="taskDeadline">Date d'échéance</label>
-            <input type="date" id="taskDeadline" required>
-
-            <label for="taskPriority">Priorité</label>
-            <select id="taskPriority">
-                <option value="P1">P1</option>
-                <option value="P2">P2</option>
-                <option value="P3">P3</option>
-            </select>
-
-            <button id="cancelButton" type="button" class="btn btn-secondary rounded-pill">Annuler</button>
-            <button id="addTask" type="submit" class="btn btn-dark rounded-pill">Ajouter</button>
-        </div>
-    </div>
 
     <script src="app.js"></script>
 </body>
