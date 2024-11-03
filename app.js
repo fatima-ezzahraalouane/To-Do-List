@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const deadline = document.getElementById('taskDeadline').value;
     const priority = document.getElementById('taskPriority').value;
 
-    if (title && description && deadline) {
+    if (title && deadline) {
       const task = document.createElement('div');
       task.className = 'task';
       task.dataset.priority = priority;
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       updateTaskCounts();
     } else {
-      alert('Veuillez remplir tous les champs.');
+      alert('Please fill in all fields.');
     }
   });
 
