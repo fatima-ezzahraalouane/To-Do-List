@@ -77,6 +77,14 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 767px) {
+  body {
+      font-size: 0.9rem;
+  }
+  #searchInput {
+      width: 100%;
+  }
+}
 /* .modal-content input, 
 .modal-content select, 
 .modal-content textarea {
