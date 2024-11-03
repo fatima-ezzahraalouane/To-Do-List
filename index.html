@@ -16,10 +16,10 @@
     <header class="d-flex justify-content-between align-items-center p-3 m-2 rounded-3">
         <h1 class="fs-2 m-0 fw-semibold">TO DO LIST</h1>
         <div class="d-flex align-items-center">
-            <button id="addTaskButton" class="btn btn-light rounded-pill me-2" aria-label="Ajouter une tâche +">Ajouter une tâche +</button>
+            <button id="addTaskButton" class="btn btn-light rounded-pill me-2 fw-semibold" aria-label="Ajouter une tâche +">Add Task +</button>
             <div class="d-flex align-items-center bg-white rounded-pill p-1">
                 <input type="text" id="searchInput" placeholder="Search">
-                <span class="fs-5 ms-2 text-black">🔍</span>
+                <span class="fs-5 text-black">🔍</span>
             </div>
         </div>
     </header>
@@ -27,25 +27,25 @@
     <!-- Modal -->
     <div id="modal" class="modal justify-content-center align-items-center">
         <div class="modal-content p-4 text-black">
-            <h2 class="fs-3 mb-3 text-black">Nouvelle Tâche</h2>
+            <h2 class="fs-3 mb-3 text-black">New Task</h2>
 
-            <label for="taskTitle">Titre</label>
-            <input type="text" id="taskTitle" placeholder="Titre" class="form-control mb-1" required>
+            <label for="taskTitle">Title</label>
+            <input type="text" id="taskTitle" placeholder="Title" class="form-control mb-1" required>
 
             <label for="taskDescription">Description</label>
             <textarea id="taskDescription" placeholder="Description" class="form-control mb-1" required></textarea>
 
-            <label for="taskStatus">Statut</label>
+            <label for="taskStatus">Status</label>
             <select id="taskStatus" class="form-select mb-1">
                 <option value="todo">To do</option>
                 <option value="doing">Doing</option>
                 <option value="done">Done</option>
             </select>
 
-            <label for="taskDeadline">Date d'échéance</label>
+            <label for="taskDeadline">Deadline</label>
             <input type="date" id="taskDeadline" class="form-control mb-1" required>
 
-            <label for="taskPriority">Priorité</label>
+            <label for="taskPriority">Priority</label>
             <select id="taskPriority" class="form-select mb-2">
                 <option value="P1">P1</option>
                 <option value="P2">P2</option>
@@ -53,8 +53,8 @@
             </select>
 
             <div class="modal-footer p-0">
-                <button id="cancelButton" type="button" class="btn btn-secondary rounded-pill" aria-label="Annuler une tâche">Annuler</button>
-                <button id="addTask" type="submit" class="btn btn-dark rounded-pill" aria-label="Ajouter une tâche">Ajouter</button>
+                <button id="cancelButton" type="button" class="btn btn-secondary rounded-pill" aria-label="Annuler une tâche">Cancel</button>
+                <button id="addTask" type="submit" class="btn btn-dark rounded-pill" aria-label="Ajouter une tâche">Add</button>
             </div>
         </div>
     </div>

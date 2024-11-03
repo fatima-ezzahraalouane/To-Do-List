@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       task.innerHTML = `
           <h3>${title}</h3>
-          <p>Date d'échéance : ${deadline}</p>
-          <button onclick="changeStatus(this)">Changer statut</button>
-          <button onclick="deleteTask(this)">Supprimer</button>
+          <p>Deadline : ${deadline}</p>
+          <button onclick="changeStatus(this)">Change status</button>
+          <button onclick="deleteTask(this)">Delete</button>
         `;
 
       document.getElementById(status).appendChild(task);
@@ -40,6 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       alert('Veuillez remplir tous les champs.');
     }
+  });
+
+  const searchInput = document.getElementById('searchInput');
+  searchInput.addEventListener('input', function () {
+    const query = searchInput.value.toLowerCase();
+    filterTasks(query);
   });
 });
 
@@ -60,7 +66,7 @@ function updateTaskCounts() {
   document.getElementById('done-count').textContent = document.getElementById('done').children.length - 1;
 }
 
-// Function pour supprimer une tache
+// Fonction pour supprimer une tache
 function deleteTask(button) {
   button.parentElement.remove();
   updateTaskCounts();
@@ -72,4 +78,18 @@ function clearModalFields() {
   document.getElementById('taskStatus').value = 'todo';
   document.getElementById('taskDeadline').value = '';
   document.getElementById('taskPriority').value = 'P1';
+}
+
+// Fonction pour filtrer les taches
+function filterTasks(query) {
+  const tasks = document.querySelectorAll('.task');
+  tasks.forEach(task => {
+    const title = task.querySelector('h3').textContent.toLowerCase();
+    if (title.includes(query)) {
+      task.style.display = 'block';
+    }
+    else {
+      task.style.display = 'none';
+    }
+  });
 }
